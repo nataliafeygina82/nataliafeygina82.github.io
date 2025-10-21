@@ -1,2 +1,43 @@
-<script src=https://pxl.demo.altcraft.com/form/js/embed_v1.js></script>
-<iframe src="https://pxl.demo.altcraft.com/form?form=8NJf1mCeuRv75dBenr42Gi2vuYYNHwSoZPqc75bCD6jRietJPEuaGuMGiA8eydCG2kakruTHXQjPaUnnLgTFF6xT&iframe=1" frameborder="0" name="ak-form-8NJf1mCeuRv75dBenr42Gi2vuYYNHwSoZPqc75bCD6jRietJPEuaGuMGiA8eydCG2kakruTHXQjPaUnnLgTFF6xT" class="ak-form" width="100%" sandbox="allow-same-origin allow-forms allow-scripts allow-popups allow-popups-to-escape-sandbox allow-top-navigation"></iframe>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script>
+    (function (window, document, dataLayerName, containerID) {
+        window[dataLayerName] = window[dataLayerName] || [];
+        window[dataLayerName].push({ 'start': new Date().getTime(), event: 'actm-js' });
+        var firstScript = document.getElementsByTagName('script')[0];
+        var script = document.createElement('script');
+        var dl = dataLayerName !== 'acDataLayer' ? '&l=' + dataLayerName : '';
+        script.async = true;
+        script.src = 'https://pxl.demo.altcraft.com/actm/js/actm.js?id=' + containerID + dl;
+        script.type = 'module';
+        if (firstScript && firstScript.parentNode) {
+            firstScript.parentNode.insertBefore(script, firstScript);
+        }
+    }(window, document, 'acDataLayer', 'ATM-9oxAKsRVR6hDb8U0m'));
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Подборка лучших книг</title>
+  <script src="https://pxl.demo.altcraft.com/ak_container.js?id=NDE1fDQ=" ></script>
+</head>
+<body>
+
+   <button id="init_sub">Подписаться на уведомления</button> // Кнопка подписки
+
+<script>
+	document.getElementById('init_sub').addEventListener('click', function() { // По клику на кнопку..
+	try {
+		var akPush = new AKPush();
+		akPush.initSubscription() // Покажет форму для подписки
+		}
+	catch (e) {
+		console.log(e); // В случае ошибки выведет сообщение в консоль
+		}
+	});
+</script>
+
+    <p>Для вас лучшие книги</p>
+
+</body>
+</html>
